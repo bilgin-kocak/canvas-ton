@@ -10,10 +10,16 @@ import { Context } from './context/index';
 import Rules from './page/Rules';
 import Detail from './page/Detail';
 
+const tele = window.Telegram.Webapp;
+
 function App() {
   const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState({});
   const tonAddress = useTonAddress();
+
+  useEffect(() => {
+    tele.ready();
+  }, []);
 
   useEffect(() => {
     const targetUrl = location.pathname + location.search;

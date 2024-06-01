@@ -57,7 +57,7 @@ function Home() {
     <div className="page home_page">
       <div className="header">
         <div className="header_l">
-          <div>Your Token: {userInfo.score || 0}</div>
+          <div>CanvasToken: {userInfo.score || 0}</div>
           <div>Tickets: {userInfo.playRights || 0}</div>
         </div>
         <div className="header_r">
