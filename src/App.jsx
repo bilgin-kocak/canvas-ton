@@ -10,15 +10,17 @@ import { Context } from './context/index';
 import Rules from './page/Rules';
 import Detail from './page/Detail';
 
-const tele = window.Telegram.Webapp;
+// const tele = window.Telegram.WebApp;
 
 function App() {
   const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState({});
   const tonAddress = useTonAddress();
 
+  console.log(window.Telegram);
+
   useEffect(() => {
-    tele.ready();
+    window.Telegram.WebApp.ready();
   }, []);
 
   useEffect(() => {
@@ -37,7 +39,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/rules" element={<Rules />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/game" element={<Detail />} />
       </Routes>
     </Context.Provider>
   );

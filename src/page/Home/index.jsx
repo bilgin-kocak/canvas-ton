@@ -41,7 +41,7 @@ function Home() {
     } else {
       console.log('playRights', userInfo.playRights);
       // await updatePlayRights(tonAddress, userInfo.playRights - 1);
-      navigate('/detail');
+      navigate('/game');
     }
   };
 

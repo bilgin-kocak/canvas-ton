@@ -10,7 +10,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <ConfigProvider locale={enUS}>
-      <TonConnectUIProvider manifestUrl="https://koala.cryptoweb3.tools/tonconnect-manifest.json">
+      <TonConnectUIProvider manifestUrl="https://665b7b16f2305d286bab4bbf--incandescent-croquembouche-9e6207.netlify.app/tonconnect-manifest.json">
         <App />
       </TonConnectUIProvider>
     </ConfigProvider>
