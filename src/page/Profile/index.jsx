@@ -100,6 +100,8 @@ function Profile() {
       onConfirm: async () => {
         await handleBuy(values);
       },
+      confirmText: 'Confirm',
+      cancelText: 'Cancel',
     });
   };
 
