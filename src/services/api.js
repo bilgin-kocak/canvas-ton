@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const backendUrl = 'http://localhost:3001';
+// const backendUrl = 'http://localhost:3001';
+const backendUrl = 'https://canvaston-backend-a447016f6ff9.herokuapp.com/';
 
 const api = axios.create({
   baseURL: backendUrl,
